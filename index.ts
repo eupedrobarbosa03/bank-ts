@@ -8,6 +8,7 @@ export const login = new Login();
 login.loginEffect();
 const operations = new Operations();
 
+
 objectToJson(login.loginFind());
 objectToJson(bank.accounts());
 
