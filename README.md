@@ -187,7 +187,7 @@ operations.seeBalance() // mostra o saldo da conta (débito).
 O node.js precisa estar instalado.
 O typescript precisa estar instalado. npm install typescript -g
 
-git clone https://github.com/eupedrobarbosa03/bank-ts.git
+Use o comando: git clone https://github.com/eupedrobarbosa03/bank-ts.git para clonar o repositório.
 
 Recomendo a instalação do live server do vscode para facilitar o uso.
 Clique no index.ts como o botão direito, clique em "open in integrated Terminal", após abrir o terminal, execute o comando tsc -w e clique em "Go live" no canto inferior direito.
