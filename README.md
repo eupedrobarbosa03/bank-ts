@@ -4,23 +4,24 @@
 [📌] **Tipo**: Banco Digital (Simulação).  
 
 ---
-**Bank-ts** é uma aplicação que simula um sistema bancário. Todos os métodos só podem ser executados via código. Eu optei por este modo para mostrar de forma direta como funciona a aplicação de conceitos sem interações com o usuário (interface ou input). O sistema conta com diversas funcionalidades: CRUD (criar conta, atualizar contar, deletar consta e pegar contas), sacar, depositar, ver saldo (crédito e débito), limite crédito, pedir empréstimo, comprar com débito ou crédito, realizar transferência via pix e login.
+**Bank-ts** é um sistema que simula um sistema bancário. Todos os métodos só podem ser executados via código. Eu optei por este modo para mostrar de forma direta como funciona a aplicação de conceitos sem interações com o usuário (interface ou input). O sistema conta com diversas funcionalidades: CRUD (criar conta, atualizar contar, deletar consta e pegar contas), sacar, depositar, ver saldo (crédito e débito), limite crédito, pedir empréstimo, comprar com débito ou crédito, realizar transferência via pix e login.
 
 ---
 ### TECNOLOGIAS E CONCEITOS UTILIZADOS 💻
 **[⚙️] Tecnologias**: javascript e typescript.  
-**[📗] Conceitos**: modules, interface-ts, poo, localstorage, regExp e typeAlias.  
+**[📗] Conceitos**: modules, interface-ts, poo, localstorage, regExp, typeAlias, generics e narrowing.  
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 ---
-### FUNCIONALIDADES DA APLICAÇÃO ✅
-**[✅] Múltiplas escolhas** para definir qual tipo de senha será gerada. Exemplo: Deve conter números e símolos.  
-**[✅] Definir o tamanho** da senha com um range de 8 a 40 caracteres.  
-**[✅] Copiar senha gerada**.  
-**[✅] Sistema de segurança** que impossibilita de copiar sem ter a senha gerada e não ter o(s) tipo(s) de caracteres selecionado(s).  
-**[✅] Experiência de usuário**: No momento da geração da senha, o input recebe "Gerando senha...". Alertas: Senha copiada e/ou nenhuma escolha de tipo de caracteres.  
+### FUNCIONALIDADES DO SISTEMA ✅
+**[✅] CRUD BANK**: Criar conta, atualizar conta, deletar conta e listar contas.  
+**[✅] Login**: Realizar login na conta.  
+**[✅] Dados**: Todos os dados são salvos em localstorage.  
+**[✅] Notificaõess**: Contas que há movimentações são notificadas, as notificações mais comuns são: empréstimo, compra realizada, saque realizado, déposito realizado, pix enviando ou recebido, etc.  
+**[✅] Operações Bancárias**: Ver saldo (crédito e débito), sacar, depositar, pedir empréstimo, transferir via pix, comprar no débito e/ou crédito.  
+**[✅] Controle total** do sistema via código para entendimento de conceitos sem a utilização de interface interativa.   
 
 ---
 
@@ -147,3 +148,53 @@
   <br/>
   <img src="images/fazendo_login_outra_conta_resultado.png" width="800"/>
 </p>
+
+--- 
+
+### 🤖 Comandos
+
+```js
+
+// Para criar, atualizar e deletar.
+
+bank.accountCreate(name, cpf, password, email, telephone); // susbtitua os campos com os dados
+bank.accountUpdate(cpf, password); // susbtitua os campos com os dados
+bank.accountDelete(cpf, password); // susbtitua os campos com os dados
+
+// Login
+
+export const login = new Login(cpf, password); // substitua os campos om os dados
+
+// Quando o sistema identificar login, as operações podem ser executadas
+
+operations.buyWithCredit(value) // value = valor da compra
+operations.buyWithDebit(value) // value = valor da compra
+operations.lending(value, installMentsQuantity) // value = valor do empréstimo | installMentsQuantity = quantidade de parcelas
+operations.sake(value) // value = valor que será sacado
+operations.transfer(value, key) // value = quantidade que será transferira | key = chave pix do destinário 
+operations.deposit(value) // value = valor que será depositado
+operations.seeLimit() // mostra o limite de crédito
+operations.seeBalance() // mostra o saldo da conta (débito).
+
+```
+
+---
+
+### 📗 Tutorial para usar o sistema
+
+```git
+
+O node.js precisa estar instalado.
+O typescript precisa estar instalado. npm install typescript -g
+
+Use o seguinte comando para clonar o repositório: git clone https://github.com/eupedrobarbosa03/bank-ts.git 
+
+Recomendo a instalação do live server do vscode para facilitar o uso.
+Clique no index.ts como o botão direito, clique em "open in integrated Terminal", após abrir o terminal, execute o comando tsc -w e clique em "Go live" no canto inferior direito.
+O index.ts é o controle de todo o sistema. Leia os comandos e veja os print's para ver o funcionamento do sistema.
+
+Os dados são salvos em localstorage, sempre que for executar um comando, esteja atento para não executar o comando duas vezes de forma não intencional.
+Exemplo: operations.deposit(500), se eu der CTRL + S duas vezes, esse comando será executado duas vezes, logo, a conta possuirá 1000 de saldo.
+Outro exemplo: bank.accountCreate("pedro", "12345678910", "pedro123", "pedro@gmail", "61 123456789"); ao dar CTRL + S duas vezes,  na primeira execução o sistema fará o salvamento no storage, na segunda execução o sistema retornará erro porque os dados são iguais, e isso é bom. Execute o mesmo comando com outros dados para criar outra conta. Sempre apague ou edite o comando para tal finalidade.
+
+```
