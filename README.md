@@ -19,9 +19,10 @@
 **[✅] CRUD BANK**: Criar conta, atualizar conta, deletar conta e listar contas.  
 **[✅] Login**: Realizar login na conta.  
 **[✅] Dados**: Todos os dados são salvos em localstorage.  
-**[✅] Notificaõess**: Contas que há movimentações são notificadas, as notificações mais comuns são: empréstimo, compra realizada, saque realizado, déposito realizado, pix enviando ou recebido, etc.  
+**[✅] Notificaõess**: Contas que há movimentações são notificadas, as notificações mais comuns são: empréstimo, compra realizada, compra negada, saque realizado, déposito realizado, pix enviando ou recebido, etc.  
 **[✅] Operações Bancárias**: Ver saldo (crédito e débito), sacar, depositar, pedir empréstimo, transferir via pix, comprar no débito e/ou crédito.  
-**[✅] Controle total** do sistema via código para entendimento de conceitos sem a utilização de interface interativa.   
+**[✅] Controle total** do sistema via código para entendimento de conceitos sem a utilização de interface interativa.  
+**[✅] Mensagens de erros** se houver erros na criação, atualização, transferência via pix, depósito, saque, compras no cartão de débito ou crédito, etc.  
 
 ---
 
