@@ -148,3 +148,11 @@
   <br/>
   <img src="images/fazendo_login_outra_conta_resultado.png" width="800"/>
 </p>
+
+--- 
+
+### 🤖 Comandos
+
+```js
+bank.accountCreate(name, cpf, password, email, telephone);
+```
