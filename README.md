@@ -1,7 +1,5 @@
 ## 📸 Demonstração do Sistema
 
----
-
 ### 🆕 Criando Conta
 
 <p align="left">
