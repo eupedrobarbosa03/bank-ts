@@ -177,3 +177,19 @@ operations.seeLimit() // mostra o limite de crédito
 operations.seeBalance() // mostra o saldo da conta (débito).
 
 ```
+
+---
+
+### 📗 Tutorial para usar o sistema
+
+```bash
+O node.js precisa estar instalado.
+O typescript precisa estar instalado.
+
+git clone https://github.com/eupedrobarbosa03/bank-ts.git
+
+Recomendo a instalação do live server do vscode para facilitar o uso.
+Clique no index.ts como o botão direito, clique em "open in integrated Terminal", após abrir o terminal, execute o comando tsc -w e clique em "Go live" no canto inferior direito.
+O index.ts é o controle de todo o sistema. Leia os comandos e veja os print's para ver o funcionamento do sistema.
+
+```
