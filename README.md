@@ -195,6 +195,6 @@ O index.ts é o controle de todo o sistema. Leia os comandos e veja os print's p
 
 Os dados são salvos em localstorage, sempre que for executar um comando, esteja atento para não executar o comando duas vezes de forma não intencional.
 Exemplo: operations.deposit(500), se eu der CTRL + S duas vezes, esse comando será executado duas vezes, logo, a conta possuirá 1000 de saldo.
-Outro exemplo: bank.accountCreate("pedro", "12345678910", "pedro123", "pedro@gmail", "61 123456789"); ao dar CTRL + S duas vezes,  na primeira execução o sistema fará o salvamento no storage, na segunda execução o sitema retornará erro porque os dados são iguais, e isso é bom. Execute o mesmo comando com outrso dados para criar outra conta. Sempre apague ou edite o comando para tal finalidade.
+Outro exemplo: bank.accountCreate("pedro", "12345678910", "pedro123", "pedro@gmail", "61 123456789"); ao dar CTRL + S duas vezes,  na primeira execução o sistema fará o salvamento no storage, na segunda execução o sistema retornará erro porque os dados são iguais, e isso é bom. Execute o mesmo comando com outros dados para criar outra conta. Sempre apague ou edite o comando para tal finalidade.
 
 ```
