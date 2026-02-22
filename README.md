@@ -96,7 +96,7 @@
 
 ---
 
-### 🏧 Compra com Débito
+### 💳 Compra com Débito
 
 <p align="left">
   <img src="images/compra_com_debito.png" width="800"/>
