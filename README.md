@@ -154,5 +154,26 @@
 ### 🤖 Comandos
 
 ```js
-bank.accountCreate(name, cpf, password, email, telephone);
+
+// Para criar, atualizar e deletar.
+
+bank.accountCreate(name, cpf, password, email, telephone); // susbtitua os campos com os dados
+bank.accountUpdate(cpf, password); // susbtitua os campos com os dados
+bank.accountDelete(cpf, password); // susbtitua os campos com os dados
+
+// Login
+
+export const login = new Login(cpf, password); // substitua os campos om os dados
+
+// Quando o sistema identificar login, as operações podem ser executadas
+
+operations.buyWithCredit(value) // value = valor da compra
+operations.buyWithDebit(value) // value = valor da compra
+operations.lending(value, installMentsQuantity) // value = valor do empréstimo | installMentsQuantity = quantidade de parcelas
+operations.sake(value) // value = valor que será sacado
+operations.transfer(value, key) // value = quantidade que será transferira | key = chave pix do destinário 
+operations.deposit(value) // value = valor que será depositado
+operations.seeLimit() // mostra o limite de crédito
+operations.seeBalance() // mostra o saldo da conta (débito).
+
 ```
