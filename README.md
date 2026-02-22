@@ -4,23 +4,24 @@
 [📌] **Tipo**: Banco Digital (Simulação).  
 
 ---
-**Bank-ts** é uma aplicação que simula um sistema bancário. Todos os métodos só podem ser executados via código. Eu optei por este modo para mostrar de forma direta como funciona a aplicação de conceitos sem interações com o usuário (interface ou input). O sistema conta com diversas funcionalidades: CRUD (criar conta, atualizar contar, deletar consta e pegar contas), sacar, depositar, ver saldo (crédito e débito), limite crédito, pedir empréstimo, comprar com débito ou crédito, realizar transferência via pix e login.
+**Bank-ts** é um sistema que simula um sistema bancário. Todos os métodos só podem ser executados via código. Eu optei por este modo para mostrar de forma direta como funciona a aplicação de conceitos sem interações com o usuário (interface ou input). O sistema conta com diversas funcionalidades: CRUD (criar conta, atualizar contar, deletar consta e pegar contas), sacar, depositar, ver saldo (crédito e débito), limite crédito, pedir empréstimo, comprar com débito ou crédito, realizar transferência via pix e login.
 
 ---
 ### TECNOLOGIAS E CONCEITOS UTILIZADOS 💻
 **[⚙️] Tecnologias**: javascript e typescript.  
-**[📗] Conceitos**: modules, interface-ts, poo, localstorage, regExp e typeAlias.  
+**[📗] Conceitos**: modules, interface-ts, poo, localstorage, regExp, typeAlias, generics e narrowing.  
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 ---
-### FUNCIONALIDADES DA APLICAÇÃO ✅
-**[✅] Múltiplas escolhas** para definir qual tipo de senha será gerada. Exemplo: Deve conter números e símolos.  
-**[✅] Definir o tamanho** da senha com um range de 8 a 40 caracteres.  
-**[✅] Copiar senha gerada**.  
-**[✅] Sistema de segurança** que impossibilita de copiar sem ter a senha gerada e não ter o(s) tipo(s) de caracteres selecionado(s).  
-**[✅] Experiência de usuário**: No momento da geração da senha, o input recebe "Gerando senha...". Alertas: Senha copiada e/ou nenhuma escolha de tipo de caracteres.  
+### FUNCIONALIDADES DO SISTEMA ✅
+**[✅] CRUD BANK**: Criar conta, atualizar conta, deletar conta e listar contas.  
+**[✅] Login**: Realizar login na conta.  
+**[✅] Dados**: Todos os dados são salvos em localstorage.  
+**[✅] Notificaõess**: Contas que há movimentações são notificadas, as notificações mais comuns são: empréstimo, compra realizada, saque realizado, déposito realizado, pix enviando ou recebido, etc.  
+**[✅] Operações Bancárias**: Ver saldo (crédito e débito), sacar, depositar, pedir empréstimo, transferir via pix, comprar no débito e/ou crédito.  
+**[✅] Controle total** do sistema via código para entendimento de conceitos sem a utilização de interface interativa.   
 
 ---
 
