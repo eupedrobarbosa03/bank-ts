@@ -193,4 +193,8 @@ Recomendo a instalação do live server do vscode para facilitar o uso.
 Clique no index.ts como o botão direito, clique em "open in integrated Terminal", após abrir o terminal, execute o comando tsc -w e clique em "Go live" no canto inferior direito.
 O index.ts é o controle de todo o sistema. Leia os comandos e veja os print's para ver o funcionamento do sistema.
 
+Os dados são salvos em localstorage, sempre que for executar um comando, esteja atento para não executar o comando duas vezes de forma não intencional.
+Exemplo: operations.deposit(500), se eu der CTRL + S duas vezes, esse comando será executado duas vezes, logo, a conta possuirá 1000 de saldo.
+Outro exemplo: bank.accountCreate("pedro", "12345678910", "pedro123", "pedro@gmail", "61 123456789"); ao dar CTRL + S duas vezes,  na primeira execução o sistema fará o salvamento no storage, na segunda execução o sitema retornará erro porque os dados são iguais, e isso é bom. Execute o mesmo comando com outrso dados para criar outra conta. Sempre apague ou edite o comando para tal finalidade.
+
 ```
