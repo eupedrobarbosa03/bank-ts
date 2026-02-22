@@ -182,9 +182,10 @@ operations.seeBalance() // mostra o saldo da conta (débito).
 
 ### 📗 Tutorial para usar o sistema
 
-```bash
+```git
+
 O node.js precisa estar instalado.
-O typescript precisa estar instalado.
+O typescript precisa estar instalado. npm install typescript -g
 
 git clone https://github.com/eupedrobarbosa03/bank-ts.git
 
