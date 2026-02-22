@@ -1,0 +1,149 @@
+## BANK-TS 📌
+[👮] **Autor**: Pedro Henrique.  
+[📅] **Data**: 22/02/2026.  
+[📌] **Tipo**: Banco Digital (Simulação).  
+
+---
+**Bank-ts** é uma aplicação que simula um sistema bancário. Todos os métodos só podem ser executados via código. Eu optei por este modo para mostrar de forma direta como funciona a aplicação de conceitos sem interações com o usuário (interface ou input). O sistema conta com diversas funcionalidades: CRUD (criar conta, atualizar contar, deletar consta e pegar contas), sacar, depositar, ver saldo (crédito e débito), limite crédito, pedir empréstimo, comprar com débito ou crédito, realizar transferência via pix e login.
+
+---
+### TECNOLOGIAS E CONCEITOS UTILIZADOS 💻
+**[⚙️] Tecnologias**: javascript e typescript.  
+**[📗] Conceitos**: modules, interface-ts, poo, localstorage, regExp e typeAlias.  
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+
+---
+### FUNCIONALIDADES DA APLICAÇÃO ✅
+**[✅] Múltiplas escolhas** para definir qual tipo de senha será gerada. Exemplo: Deve conter números e símolos.  
+**[✅] Definir o tamanho** da senha com um range de 8 a 40 caracteres.  
+**[✅] Copiar senha gerada**.  
+**[✅] Sistema de segurança** que impossibilita de copiar sem ter a senha gerada e não ter o(s) tipo(s) de caracteres selecionado(s).  
+**[✅] Experiência de usuário**: No momento da geração da senha, o input recebe "Gerando senha...". Alertas: Senha copiada e/ou nenhuma escolha de tipo de caracteres.  
+
+---
+
+## 📸 Demonstração do Sistema
+
+### 🆕 Criando Conta
+
+<p align="left">
+  <img src="images/criando_conta.png" width="800"/>
+  <br/>
+  <img src="images/criando_conta_resultado.png" width="800"/>
+  <br/>
+  <img src="images/criando_conta_outro_resultado.png" width="800"/>
+</p>
+
+---
+
+### 🗑️ Deletando Conta
+
+<p align="left">
+  <img src="images/deletando_conta.png" width="800"/>
+  <br/>
+  <img src="images/deletando_conta_resultado.png" width="800"/>
+</p>
+
+---
+
+### ✏️ Atualizando Conta
+
+<p align="left">
+  <img src="images/atualizando_conta.png" width="800"/>
+  <br/>
+  <img src="images/atualizando_conta_resultado.png" width="800"/>
+</p>
+
+---
+
+### 🔐 Login na Conta "Orlando"
+
+<p align="left">
+  <img src="images/fazendo_login.png" width="800"/>
+  <br/>
+  <img src="images/fazendo_login_resultado.png" width="800"/>
+  <br/>
+  <img src="images/fazendo_login_outro_resultado.png" width="800"/>
+</p>
+
+---
+
+### 💰 Realizando Depósito
+
+<p align="left">
+  <img src="images/fazendo_deposito.png" width="800"/>
+  <br/>
+  <img src="images/fazendo_deposito_resultado.png" width="800"/>
+</p>
+
+---
+
+### 💸 Realizando Saque
+
+<p align="left">
+  <img src="images/fazendo_saque.png" width="800"/>
+  <br/>
+  <img src="images/fazendo_saque_resultado.png" width="800"/>
+</p>
+
+---
+
+### 🏦 Pedido de Empréstimo
+
+<p align="left">
+  <img src="images/fazendo_emprestimo.png" width="800"/>
+  <br/>
+  <img src="images/fazendo_emprestimo_resultado.png" width="800"/>
+</p>
+
+---
+
+### 📊 Visualizando Saldo e Limite
+
+<p align="left">
+  <img src="images/vendo_saldo_limite.png" width="800"/>
+  <br/>
+  <img src="images/vendo_saldo_limite_resultado.png" width="800"/>
+</p>
+
+---
+
+### 💳 Compra com Crédito
+
+<p align="left">
+  <img src="images/comprando_com_credito.png" width="800"/>
+  <br/>
+  <img src="images/comprando_com_credito_resultado.png" width="800"/>
+</p>
+
+---
+
+### 💳 Compra com Débito
+
+<p align="left">
+  <img src="images/compra_com_debito.png" width="800"/>
+  <br/>
+  <img src="images/compra_com_debito_resultado.png" width="800"/>
+</p>
+
+---
+
+### ⚡ Transferência via Pix
+
+<p align="left">
+  <img src="images/transferindo_pix.png" width="800"/>
+  <br/>
+  <img src="images/transferindo_pix_resultado.png" width="800"/>
+</p>
+
+---
+
+### 🔑 Login na Conta "Pedro"
+
+<p align="left">
+  <img src="images/fazendo_login_outra_conta.png" width="800"/>
+  <br/>
+  <img src="images/fazendo_login_outra_conta_resultado.png" width="800"/>
+</p>
